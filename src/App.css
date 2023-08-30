@@ -1,42 +1,98 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  /* background-color: #f4f4f4;  */
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.home-container {
+  /* background-size: cover; 
+   background-position: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height:100vh;
+
+  
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ufcLink {
+  color: white;
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.ufcLogo {
+  /* width: 200px; */
+  background-size:cover;
+max-width:100%;
+opacity:0.8;
+filter: blur(1px); /* Apply a blur effect to the image */
+
 }
 
-.card {
-  padding: 2em;
+header {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid rgb(170, 153, 153); /* Visual border at the bottom */
 }
 
-.read-the-docs {
-  color: #888;
+
+.site-logo {
+  color: white;
+  font-size: 24px;
+  margin-right: auto; /* Pushes the links to the right side */
 }
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+}
+
+h2 {
+color: grey;
+font-family: 'Arial Black', sans-serif; /* Use Arial Black or a similar bold font */
+font-weight: bold;
+letter-spacing: 2px; /* Increase letter spacing for emphasis */
+text-transform: uppercase;
+
+
+}
+
+.siteLogo {
+  height:40px;
+  margin-left:10px;
+}
+
+.enterButton {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #d50000; /* Dark red color */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'Nosifer', cursive; /* Apply the Nosifer font */
+
+}
+.enterButton:hover {
+  background-color: #8b0000;
+}
+
