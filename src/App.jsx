@@ -1,24 +1,22 @@
 import React from 'react'
-import ReactDom from 'react-dom/client'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import Fighters from '../src/components/Fighters'
-import '../server'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from '../src/components/Layout'
 import './App.css'
+import '../server'
 import Home from './pages/Home'
-function App() {
+import Pfp from './pages/Pfp'
 
+function App() {
   return (
     <>
-        <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Layout />}></Route>
-
+          <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='pfp' element={<Pfp />}/>
+          </Route>
         </Routes>
-        <Home />
-
-        </BrowserRouter>
-
+      </BrowserRouter>
     </>
   )
 }

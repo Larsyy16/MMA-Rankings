@@ -1,9 +1,9 @@
 import { createServer, Model } from "miragejs"
 
-
 createServer({
     routes() {
         this.namespace = 'api'
+        this.logging = false
         this.get('/data',()=>data)
     }
 })
@@ -1809,4 +1809,5 @@ let data = {
         }]
     }]
 }
+
 
