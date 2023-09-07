@@ -1,13 +1,12 @@
-// GifComponent.jsx
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-const GifComponent = () => {
+const GifComponent = ({ src, title }) => {
   return (
     <div>
       <div className="gif-container">
         <iframe
-          title="Jon Jones Sticker"
-          src="https://giphy.com/embed/kGdHb1zoKOx764R7MN"
+          title={title}
+          src={src}
           width="480"
           height="360"
           frameBorder="0"

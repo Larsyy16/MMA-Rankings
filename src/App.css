@@ -16,6 +16,22 @@
   min-height:100vh;
 }
 
+main {
+  /* display:flex; */
+  /* flex-wrap:wrap; */
+}
+/* .description-container {
+  flex-grow:1;
+} */
+/* 
+.overlay {
+  display:flex;
+} */
+
+.container {
+  display:flex;
+}
+
 .ufcLink {
   color: white;
   font-size: 24px;
@@ -132,6 +148,7 @@ text-transform: uppercase;
   border-radius: 5px;
   display: flex;
   align-items: center;
+  /* flex-basis:200px; */
 }
 
 .pfp h3 {

@@ -1792,21 +1792,6 @@ let data = {
                 "gender": "female"
             }
         }]
-    }, {
-        "type_id": 20,
-        "name": "womens_featherweight",
-        "year": 2023,
-        "week": 33,
-        "competitor_rankings": [{
-            "rank": 0,
-            "movement": 0,
-            "competitor": {
-                "id": "sr:competitor:246051",
-                "name": "Nunes, Amanda",
-                "abbreviation": "NUN",
-                "gender": "female"
-            }
-        }]
     }]
 }
 
