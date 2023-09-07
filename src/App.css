@@ -4,16 +4,15 @@
   text-align: center;
 }
 .site-wrapper {
-  margin-top:70px;
+  margin-top: 70px;
 }
 
 .home-container {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height:100vh;
+  min-height: 100vh;
 }
 
 main {
@@ -29,7 +28,7 @@ main {
 } */
 
 .container {
-  display:flex;
+  display: flex;
 }
 
 .ufcLink {
@@ -38,10 +37,10 @@ main {
 }
 
 .ufcLogo {
-  background-size:cover;
-max-width:100%;
-opacity:0.8;
-filter: blur(1px); 
+  background-size: cover;
+  max-width: 100%;
+  opacity: 0.8;
+  filter: blur(1px);
 }
 
 header {
@@ -55,7 +54,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 2px solid rgb(170, 153, 153); 
+  border-bottom: 2px solid rgb(170, 153, 153);
 }
 
 .site-logo {
@@ -74,18 +73,16 @@ nav a {
 }
 
 h2 {
-color: grey;
-font-family: 'Arial Black', sans-serif; /* Use Arial Black or a similar bold font */
-font-weight: bold;
-letter-spacing: 2px; /* Increase letter spacing for emphasis */
-text-transform: uppercase;
-
-
+  color: grey;
+  font-family: "Arial Black", sans-serif; /* Use Arial Black or a similar bold font */
+  font-weight: bold;
+  letter-spacing: 2px; /* Increase letter spacing for emphasis */
+  text-transform: uppercase;
 }
 
 .siteLogo {
-  height:40px;
-  margin-left:10px;
+  height: 40px;
+  margin-left: 10px;
 }
 
 .enterButton {
@@ -100,22 +97,19 @@ text-transform: uppercase;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease-in-out;
-  font-family: 'Nosifer', cursive;
-
+  font-family: "Nosifer", cursive;
 }
 .enterButton:hover {
   background-color: #8b0000;
 }
 
 .fighterHeader {
-  font-family: 'Nosifer', cursive;
-
+  font-family: "Nosifer", cursive;
 }
 
-
 .fighterParagraph {
-  font-family: 'roboto', sans-serif; 
-  font-size: 16px; 
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -123,22 +117,23 @@ text-transform: uppercase;
 .fighterNextButton {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #ff6600; 
-  color: #fff; 
-  font-family: 'Open Sans', sans-serif; 
-  font-size: 18px; 
+  background-color: #ff6600;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
   text-decoration: none;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 .fighterNextButton:hover {
-  background-color: #ff8c00; 
-  transform: scale(1.05); 
+  background-color: #ff8c00;
+  transform: scale(1.05);
 }
-
 
 .pfp {
   border: 1px solid #ccc;
@@ -154,18 +149,17 @@ text-transform: uppercase;
 .pfp h3 {
   margin: 0;
   font-size: 18px;
-  color:#333;
+  color: #333;
 }
 
 .pfp span {
   font-weight: bold;
   margin-right: 10px;
-  color: #ffd700; 
-  min-width: 30px; 
+  color: #ffd700;
+  min-width: 30px;
   text-align: center;
-  font-family: monospace; 
+  font-family: monospace;
 }
-
 
 h4 {
   text-align: center;
@@ -173,15 +167,14 @@ h4 {
   margin: 20px 0;
 }
 
-
 .pfp:hover {
   background-color: #e5e5e5;
   transition: background-color 0.3s;
 }
 
 h3 {
-  display:flex;
+  display: flex;
   margin: 0;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
