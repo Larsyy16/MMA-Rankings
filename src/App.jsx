@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "../src/components/Layout";
 import "./App.css";
 import "../server";
@@ -21,7 +21,7 @@ import UfcRankings from "./pages/UfcRankings";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -40,7 +40,7 @@ function App() {
             <Route path="Rankings" element={<UfcRankings />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
