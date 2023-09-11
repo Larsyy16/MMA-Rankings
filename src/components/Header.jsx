@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-
+import logo from './src/assets/mma-logo.png'
 export default function Header() {
   return (
     <header>
       <Link to="./">
-        <img src="./src/assets/mma-logo.png" className="siteLogo" />
+        <img src={logo} className="siteLogo" />
       </Link>
 
       <nav>
