@@ -2,7 +2,8 @@ import { createServer, Model } from "miragejs";
 
 createServer({
   routes() {
-    this.namespace = "api";
+    let namespace = process.env.NODE_ENV === 'production' ? "/MMA-Rankings/api" : "/api";
+    this.namespace = namespace;
     this.logging = false;
     this.get("/data", () => data);
   },
