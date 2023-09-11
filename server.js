@@ -8,6 +8,7 @@ createServer({
   },
 });
 
+
 let data = {
   generated_at: "2023-08-25T16:35:17+00:00",
   rankings: [
