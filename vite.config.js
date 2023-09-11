@@ -4,7 +4,9 @@ import { createServer } from "miragejs";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/MMA-Rankings/",
   plugins: [react()],
-
-  base: "",
+  server: {
+    middleware: [createServer({ routes() {} }).middleware],
+  },
 });
