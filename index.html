@@ -1,17 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="module">
+      import RefreshRuntime from "/@react-refresh";
+      RefreshRuntime.injectIntoGlobalHook(window);
+      window.$RefreshReg$ = () => {};
+      window.$RefreshSig$ = () => (type) => type;
+      window.__vite_plugin_react_preamble_installed__ = true;
+    </script>
+    <script type="module" src="/@vite/client"></script>
+    <script type="module" src="/index.html?html-proxy&amp;index=0.js"></script>
+    <script type="module" src="/@vite/client"></script>
+    <script
+      type="module"
+      src="/index.html?t=1696264080046&amp;html-proxy&amp;index=0.js"
+    ></script>
+    <script type="module" src="/@vite/client"></script>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap"
-      href="https://fonts.googleapis.com/css2?family=YourChosenFont&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nosifer&amp;display=swap"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MMA-Rankings</title>
   </head>
   <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

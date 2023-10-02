@@ -17,11 +17,18 @@ import Middleweight from "./pages/Middleweight";
 import LightHeavyweight from "./pages/LightHeavyweight";
 import Heavyweight from "./pages/Heavyweight";
 import UfcRankings from "./pages/UfcRankings";
+import Test from './components/Test'
 
 function App() {
+
+  // Test()
   return (
     <>
+
       <HashRouter>
+                {/* <div>
+      <h1>A simple guide to UFC's finest fighters</h1>
+    </div> */}
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
