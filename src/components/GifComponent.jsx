@@ -2,7 +2,7 @@ import React from "react";
 
 const GifComponent = ({ src, title }) => {
   return (
-    <div>
+    
       <div className="gif-container">
         <iframe
           title={title}
@@ -13,7 +13,7 @@ const GifComponent = ({ src, title }) => {
           allowFullScreen
         ></iframe>
       </div>
-    </div>
+    
   );
 };
 

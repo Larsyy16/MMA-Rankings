@@ -5,14 +5,16 @@ import { Link } from "react-router-dom";
 
 export default function Pfp() {
   return (
-    <div className="container">
-      <div className="description-container">
+    <>
+
+        <section className="description-container" aria-labelledby="section-heading" role="region">
         <h1 className="fighterHeader">#1 Jon Jones: The MMA Virtuoso</h1>
+
         <GifComponent
           src="https://giphy.com/embed/kGdHb1zoKOx764R7MN"
           title="Jon Jones Sticker"
         />
-
+      <h3 className="fighterAbout"><em> About</em></h3>
         <p className="fighterParagraph">
           Jon Jones, the undeniable maestro of mixed martial arts, is more than
           just a fighter; he's a force of nature in the octagon. With an elusive
@@ -46,8 +48,8 @@ export default function Pfp() {
           {" "}
           Next: Women's Strawweight
         </Link>
-      </div>
+      </section>
       <Fighters weightClass={"pound_for_pound"} />
-    </div>
+    </>
   );
 }

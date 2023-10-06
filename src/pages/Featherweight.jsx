@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function Featherweight() {
   return (
-    <div className="container">
-      <div className="description-container">
+    <>
+      <section className="description-container">
         <h1 className="fighterHeader">Alex The Great Volkanovski</h1>
         <GifComponent
           src="https://giphy.com/embed/rliNGNQKYizbtmjEHd"
           title="Volk gif"
         />
+      <h3 className="fighterAbout"><em> About</em></h3>
 
         <p className="fighterParagraph">
           Alexander Volkanovski is an Australian professional fighter and the
@@ -27,8 +28,8 @@ export default function Featherweight() {
           {" "}
           Next: Lightweight
         </Link>
-      </div>
+      </section>
       <Fighters weightClass={"featherweight"} />
-    </div>
+    </>
   );
 }

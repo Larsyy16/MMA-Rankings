@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function Bantamweight() {
   return (
-    <div className="container">
-      <div className="description-container">
+    <>
+      <section className="description-container">
         <h1 className="fighterHeader">Suga Sean O'Malley</h1>
         <GifComponent
           src="https://giphy.com/embed/rTr7eJ1BOtnS4Dudy4"
           title="Suga gif"
         />
+      <h3 className="fighterAbout"><em> About</em></h3>
 
         <p className="fighterParagraph">
           Sean O'Malley is an American professional mixed martial artist who
@@ -27,8 +28,8 @@ export default function Bantamweight() {
           {" "}
           Next: Men's Featherweight
         </Link>
-      </div>
+      </section>
       <Fighters weightClass={"bantamweight"} />
-    </div>
+    </>
   );
 }

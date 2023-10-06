@@ -3,52 +3,12 @@
   padding: 0;
   text-align: center;
 }
-.site-wrapper {
-  margin-top: 70px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-main {
-  /* display:flex; */
-  /* flex-wrap:wrap; */
-}
-/* .description-container {
-  flex-grow:1;
-} */
-/* 
-.overlay {
-  display:flex;
-} */
-
-.container {
-  display: flex;
-}
-
-.ufcLink {
-  color: white;
-  font-size: 24px;
-}
-
-.ufcLogo {
-  background-size: cover;
-  max-width: 100%;
-  opacity: 0.8;
-  filter: blur(1px);
-}
-
 header {
   background-color: red;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  /* padding: 5px; */
   margin: 0;
   position: fixed;
   top: 0;
@@ -57,12 +17,18 @@ header {
   border-bottom: 2px solid rgb(170, 153, 153);
 }
 
-.site-logo {
-  color: white;
-  font-size: 24px;
-  margin-right: auto; /* Pushes the links to the right side */
+
+.logoName {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Sternbach Hollow', sans-serif;
 }
 
+.sitePicture {
+  height: 50px;
+  margin-left: 10px;
+}
 nav {
   display: flex;
 }
@@ -72,25 +38,68 @@ nav a {
   margin-left: 20px;
 }
 
+
+h1 {
+
+  padding-left:20px;
+  font-weight: bold;
+  color:white;
+}
+.siteRankings {
+  color: white;
+  font-size: 1.2em;
+  margin-right: auto; 
+}
+
+.ufcLink {
+  color: white;
+  font-size: 1.2em;
+  padding-right:.4em;
+}
+
+.ufcLogo {
+  background-size: cover;
+  max-width: 100%;
+  opacity: 0.8;
+  filter: blur(1px);
+}
+
+
+/* main*/
+main {
+  display: flex;
+  margin-top: 140px;
+  margin-bottom:63px;
+  justify-content: center;
+  padding-bottom:20px;
+  min-height: 70vh;
+
+}
+.homeSection {
+  margin-top:6vw;
+  align-items: center;
+
+}
+
 h4 {
   color: grey;
   font-family: "Nosifer", sans-serif !important; /* Use Arial Black or a similar bold font */
   font-weight: bold;
-  letter-spacing: 2px; /* Increase letter spacing for emphasis */
+  letter-spacing: 2px; 
   text-transform: uppercase;
   margin-bottom:40px;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.7em;
+}
+.homeSection {
+  display:flex;
+  flex-direction: column;
 }
 
-.siteLogo {
-  height: 50px;
-  margin-left: 10px;
-}
 
 .enterButton {
   display: inline-block;
-  padding: 12px 20px;
+  padding: .6em 1.2em;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
@@ -106,16 +115,40 @@ h4 {
   background-color: #8b0000;
 }
 
+
+/* Pages  */
+.description-container {
+  text-align: left;
+}
+
 .fighterHeader {
   font-family: "Nosifer", cursive;
+  padding-left:20px;
+  font-weight: bold;
+  color:white;
+  font-size:1.8em;
+  grid-area: header;
+
+}
+
+.fighterAbout {
+  padding-left:20px;
+  color:#EDE8EE;
+  font-weight: bold;
 }
 
 .fighterParagraph {
   font-family: "roboto", sans-serif;
   font-size: 16px;
   font-weight: normal;
+  max-width: 500px;
   line-height: 1.5;
+  text-align: left;
+  padding-left: 20px;
+  color:#EDE8EE;
+  font-weight: bold;
 }
+
 
 .fighterNextButton {
   display: inline-block;
@@ -138,64 +171,101 @@ h4 {
   transform: scale(1.05);
 }
 
+/* aside */
+aside {
+  width: 30vw;
+  max-width: 230px;
+  padding: 20px; 
+  display:flex;
+  flex-direction: column;
+
+}
+.rankingHeader {
+  color:#ffd700;
+}
 .pfp {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   padding: 10px;
   margin: 10px;
-  background-color: rgba(205, 154, 154, 0.87);
+  background-color: #8D8D92;
+  color:#ffd700;
   border-radius: 5px;
   display: flex;
   align-items: center;
-  /* flex-basis:200px; */
+  text-align: center;
+  font-weight: bold;
+  width: 200px;
+
+
 }
 
-.pfp h3 {
-  margin: 0;
-  font-size: 18px;
-  color: #333;
-}
 
 .pfp span {
-  font-weight: bold;
   margin-right: 10px;
-  color: #ffd700;
-  min-width: 30px;
-  text-align: center;
-  font-family: monospace;
-}
 
+}
 
 
 .pfp:hover {
-  background-color: #e5e5e5;
+  background-color:grey ;
   transition: background-color 0.3s;
 }
 
-h3 {
-  display: flex;
-  margin: 0;
-  font-size: 1.8em;
-  font-family: "Montserrat", sans-serif;
-  margin-bottom:30px;
-}
-h1 {
-  /* display: flex; */
-  /* font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px; */
-  padding-left:20px;
-  font-weight: bold;
-  color:white;
-}
-
-.logoName {
-  display:flex;
-}
-
-a{
-  display:flex;
-  justify-content: space-between;
+footer {
+  background-color: red;
+  position: fixed; /* or position: absolute; */
+  bottom: 0;
+  left: 0;
+  right: 0;  
   align-items: center;
+  /* padding: 10px; */
+  margin: 0;
+  width:100%;
+  border-top: 2px solid rgb(170, 153, 153);
+}
+
+footer p {
+color:white;
+font-size:18px;
+text-align: start;
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+font-weight: bold;
+}
+
+
+/* rankings page */
+
+.rankings  {
+  font-size:100%;
+  border: 1px solid #ccc;
+  width:230px;
+  height:80px;
+  padding: 10px;
+  margin: 10px;
+  /* background-color: rgba(205, 154, 154, 0.87); */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Rankings page */
+
+.rankingsHeader {
+  color:#ffd700;
+  font-family: 'Sternbach', sans-serif;
+
+  font-size:50px;
+  text-align: start;
+  font-weight: bold;
+}
+
+.rankingsPageClasses {
+  color:#EDE8EE;
+  font-size:18px;
+  text-align: start;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+
 }

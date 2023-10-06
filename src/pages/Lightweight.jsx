@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function Lightweight() {
   return (
-    <div className="container">
-      <div className="description-container">
+    <>
+      <section className="description-container">
         <h1 className="fighterHeader">Islam Makhachev</h1>
         <GifComponent
           src="https://giphy.com/embed/6UtfPXJPmbpQzkLhty"
           title="Islam gif"
         />
+      <h3 className="fighterAbout"><em> About</em></h3>
 
         <p className="fighterParagraph">
           Islam Makhachev is a Russian professional mixed martial artist and
@@ -26,8 +27,8 @@ export default function Lightweight() {
           {" "}
           Next: Welterweight
         </Link>
-      </div>
+      </section>
       <Fighters weightClass={"lightweight"} />
-    </div>
+    </>
   );
 }

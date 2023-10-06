@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function Flyweight() {
   return (
-    <div className="container">
-      <div className="description-container">
+    <>
+      <section className="description-container">
         <h1 className="fighterHeader">Alexandre The Cannibal Pantoja</h1>
         <GifComponent
           src="https://giphy.com/embed/mbhXgynraIEyGczh04"
           title="Alexandre Pantoja gif"
         />
+      <h3 className="fighterAbout"><em> About</em></h3>
 
         <p className="fighterParagraph">
           Alexandre Pantoja is a Brazilian professional mixed martial artist who
@@ -27,8 +28,8 @@ export default function Flyweight() {
           {" "}
           Next: Men's Bantamweight
         </Link>
-      </div>
+      </section>
       <Fighters weightClass={"flyweight"} />
-    </div>
+    </>
   );
 }

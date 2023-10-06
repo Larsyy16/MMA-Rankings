@@ -18,20 +18,18 @@ export default function Fighters({ weightClass }) {
   const mmaClasses =
     filteredRankings.length > 0
       ? filteredRankings[0].competitor_rankings.map((ranking, index) => (
-          <div key={uuidv4()} className="pfp">
-            <h3>
+            <p key={uuidv4()} className="pfp">
               <span>#{index + 1} </span>
               {ranking.competitor.name}
-            </h3>
-          </div>
+            </p>
         ))
       : null;
 
   // console.log(filteredRankings)
 
   return (
-    <>
-      <h4> {mmaClasses}</h4>
-    </>
+    <aside>
+      <h2 className="rankingHeader"><em>Top Ranked </em></h2>
+       {mmaClasses}</aside>
   );
 }

@@ -3,19 +3,18 @@ import logo from '../assets/mma-logo.png'
 export default function Header() {
   return (
     <header>
-<div className="logoName">
-      <Link to="./">
-        <img src={logo} className="siteLogo" />
+      <Link to="./" className="logoName">
+        <img src={logo} className="sitePicture" />
         <h1>
 
         Ufc Guide
       </h1>
       </Link>
-      </div>
+
   
       <nav>
         
-        <Link className="site-logo" to="/Rankings">
+        <Link className="siteRankings" to="/Rankings">
           <h2>Rankings</h2>
         </Link>
 

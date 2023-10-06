@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function Middleweight() {
   return (
-    <div className="container">
-      <div className="description-container">
+    <>
+      <section className="description-container">
         <h1 className="fighterHeader">Israel Stylebender Adesanya</h1>
         <GifComponent
           src="https://giphy.com/embed/d8PARN8r0GEXeedaWO"
           title="Izzy gif"
         />
+      <h3 className="fighterAbout"><em> About</em></h3>
 
         <p className="fighterParagraph">
           Israel Adesanya is a Nigerian-New Zealand professional mixed martial
@@ -27,8 +28,8 @@ export default function Middleweight() {
           {" "}
           Next: Light Heavyweight
         </Link>
-      </div>
+      </section>
       <Fighters weightClass={"middleweight"} />
-    </div>
+    </>
   );
 }

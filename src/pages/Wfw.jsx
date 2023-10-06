@@ -5,17 +5,18 @@ import { Link } from "react-router-dom";
 
 export default function Wsw() {
   return (
-    <div className="container">
-      <div className="description-container">
+    <>
+      <section className="description-container">
         <h1 className="fighterHeader">Alexa Grasso</h1>
         <GifComponent
           src="https://giphy.com/embed/YluBsIsI9q2byEjijb"
           title="Alexa Grasso Sticker"
         />
+      <h3 className="fighterAbout"><em> About</em></h3>
 
         <p className="fighterParagraph">
           Alexa Grasso is a Mexican professional mixed martial artist who
-          competes in the women’s Flyweight division of the Ultimate Fighting
+          competes in the women’s Flyweight sectionision of the Ultimate Fighting
           Championship (UFC). She has an impressive record of 16 wins and 3
           losses in her professional career1. Grasso made her professional MMA
           debut in December 2012 in her native Mexico. During the first eighteen
@@ -31,8 +32,8 @@ export default function Wsw() {
           {" "}
           Next: Women's Bantamweight
         </Link>
-      </div>
+      </section>
       <Fighters weightClass={"womens_flyweight"} />
-    </div>
+    </>
   );
 }

@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function LightHeavyweight() {
   return (
-    <div className="container">
-      <div className="description-container">
+    <>
+      <section className="description-container">
         <h1 className="fighterHeader">Jamahal Hill</h1>
         <GifComponent
           src="https://giphy.com/embed/YWhENHmJhpboaI3CrY"
           title="Jamahal gif"
         />
+      <h3 className="fighterAbout"><em> About</em></h3>
 
         <p className="fighterParagraph">
           Jamahal Hill is an American professional mixed martial artist who
@@ -25,8 +26,8 @@ export default function LightHeavyweight() {
           {" "}
           Next: Heavyweight
         </Link>
-      </div>
+      </section>
       <Fighters weightClass={"light_heavyweight"} />
-    </div>
+    </>
   );
 }

@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function Heavyweight() {
   return (
-    <div className="container">
-      <div className="description-container">
+    <>
+      <section className="description-container">
         <h1 className="fighterHeader">Jon Bones Jones</h1>
         <GifComponent
           src="https://giphy.com/embed/Y0yWjc7zSaYaTcIxKY"
           title="bones gif"
         />
+      <h3 className="fighterAbout"><em> About</em></h3>
 
         <p className="fighterParagraph">
           Jon Jones is an American professional mixed martial artist who
@@ -25,8 +26,8 @@ export default function Heavyweight() {
           {" "}
           Home
         </Link>
-      </div>
+      </section>
       <Fighters weightClass={"heavyweight"} />
-    </div>
+    </>
   );
 }

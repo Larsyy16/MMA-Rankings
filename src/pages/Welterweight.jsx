@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 
 export default function Welterweight() {
   return (
-    <div className="container">
-      <div className="description-container">
+    <>
+      <section className="description-container">
         <h1 className="fighterHeader">Leon Rocky Edwards</h1>
         <GifComponent
           src="https://giphy.com/embed/8RyyRkHMCKVllgbk9R"
           title="Leon gif"
         />
+      <h3 className="fighterAbout"><em> About</em></h3>
 
         <p className="fighterParagraph">
           Leon Edwards is an English professional mixed martial artist who
@@ -26,8 +27,8 @@ export default function Welterweight() {
           {" "}
           Next: Middleweight
         </Link>
-      </div>
+      </section>
       <Fighters weightClass={"welterweight"} />
-    </div>
+    </>
   );
 }
