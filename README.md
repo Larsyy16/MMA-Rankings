@@ -1,6 +1,20 @@
-A visual guide for current UFC champions and rankings.
+# UFC Champions and Rankings Visual Guide
 
-
-Built with Vite, Reactjs, miragejs with data from Sportsradar. User can download and use. Plan is to remove miragejs in the near future. 
+This project is a visual guide that provides information on current UFC champions and rankings.
 
 [Live Demo](https://larsyy16.github.io/MMA-Rankings/) 👈
+
+## Technologies Used
+
+- Vite
+- React.js
+- MirageJS (with plans to remove in the near future)
+
+## Data Source
+
+Data for this project is sourced from Sportsradar.
+
+## Usage
+
+Users can download and utilize this visual guide to stay updated with the latest UFC champions and rankings.
+
