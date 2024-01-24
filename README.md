@@ -8,7 +8,7 @@ This project is a visual guide that provides information on current UFC champion
 
 - Vite
 - React.js
-- MirageJS (with plans to remove in the near future)
+- MirageJS
 
 ## Data Source
 
