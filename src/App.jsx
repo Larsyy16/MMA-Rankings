@@ -1,4 +1,3 @@
-import React from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "../src/components/Layout";
 import "./App.css";
@@ -26,9 +25,6 @@ function App() {
     <>
 
       <HashRouter>
-                {/* <div>
-      <h1>A simple guide to UFC's finest fighters</h1>
-    </div> */}
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
