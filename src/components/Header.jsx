@@ -5,21 +5,21 @@ export default function Header() {
     <header>
       <Link to="./" className="logoName">
         <img src={logo} className="sitePicture" />
-        <h1>
+        <span>
 
         Ufc Guide
-      </h1>
+      </span>
       </Link>
 
   
       <nav>
         
-        <Link className="siteRankings" to="/Rankings">
-          <h2>Rankings</h2>
+        <Link className="siteLink" to="/Rankings">
+          <span>Rankings</span>
         </Link>
 
-        <Link to="https://www.ufc.com/events" className="ufcLink">
-          <h2>Next Event </h2>
+        <Link to="https://www.ufc.com/events" className="siteLink">
+          <span>Next Event </span>
         </Link>
       </nav>
     </header>
