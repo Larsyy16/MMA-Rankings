@@ -1,4 +1,3 @@
-import React from "react";
 import Fighters from "../components/Fighters";
 import GifComponent from "../components/GifComponent";
 import { Link } from "react-router-dom";

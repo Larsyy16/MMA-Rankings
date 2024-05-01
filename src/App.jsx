@@ -16,11 +16,9 @@ import Middleweight from "./pages/Middleweight";
 import LightHeavyweight from "./pages/LightHeavyweight";
 import Heavyweight from "./pages/Heavyweight";
 import UfcRankings from "./pages/UfcRankings";
-import Test from './components/Test'
 
 function App() {
 
-  // Test()
   return (
     <>
 
